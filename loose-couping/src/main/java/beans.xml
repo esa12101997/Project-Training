@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="mathch" class="com.loose_couping.MathCheating"></bean>
+	<bean id="science" class="com.loose_couping.ScienceCheating"></bean>
+	<bean id="javaCheating" class="com.loose_couping.JavaCheat"></bean>
+	<bean id="stu" class="com.loose_couping.Student">
+	<!-- 	<property name="mathCheating" ref="mathch"></property> -->
+	<property name="cheating" ref="javaCheating"></property>
+	
+	</bean>
+
+</beans>
+
+
+
+<!-- id you can give anything === go to google type spring xsd copy past 
+	here -->
